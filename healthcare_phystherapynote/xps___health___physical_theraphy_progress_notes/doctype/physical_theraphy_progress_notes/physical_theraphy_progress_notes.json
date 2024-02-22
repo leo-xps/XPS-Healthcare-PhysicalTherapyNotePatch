@@ -1,0 +1,654 @@
+{
+ "actions": [],
+ "autoname": "naming_series",
+ "creation": "2024-02-22 12:04:24.027935",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rjkn",
+  "physical_therapy_progress_note",
+  "section_break_twcq",
+  "type_intensive",
+  "column_break_yuwc",
+  "type_recovery",
+  "column_break_mkkv",
+  "type_wellness",
+  "section_break_hthr",
+  "patient",
+  "column_break_eksi",
+  "case_number",
+  "section_break_ibqh",
+  "last_name",
+  "column_break_vjoo",
+  "first_name",
+  "column_break_ivej",
+  "middle_name",
+  "section_break_eajn",
+  "age",
+  "column_break_ialg",
+  "birthday",
+  "column_break_bqpi",
+  "subjective_section",
+  "patients_chief_complains",
+  "patients_goal",
+  "vital_signs_section",
+  "vital_signs",
+  "behavioralmental_status_section",
+  "behavior_alert",
+  "behavior_oriented",
+  "behavior_cooperative",
+  "behavior_others",
+  "column_break_vwch",
+  "behavior_confused",
+  "behavior_memory_deficit",
+  "behavior_impaired_judgement",
+  "pain_section",
+  "pain_details",
+  "oi_and_palpation_section",
+  "oi",
+  "column_break_pyhv",
+  "palpation",
+  "manual_muscle_strength_section",
+  "manual_muscle_strength",
+  "functional_range_of_motion_section",
+  "functional_range_of_motion",
+  "section_break_gnye",
+  "deep_tendon_reflex",
+  "column_break_gyaf",
+  "asia_classification",
+  "prior_level_of_function_adls_section",
+  "adls",
+  "adls_equipment_used",
+  "column_break_cluo",
+  "in_home_mobility_gait_or_wheelchairscooter",
+  "in_home_mobility_equipment_used",
+  "column_break_nlmf",
+  "community_mobility",
+  "community_mobility_equipment_used",
+  "section_break_undy",
+  "functional_independence",
+  "gait_assessment_section",
+  "gait_assess_surfaces",
+  "gait_assess_level",
+  "gait_assess_uneven",
+  "gait_assess_stairs",
+  "gait_assess_distance",
+  "column_break_rxzq",
+  "assistance",
+  "weight_bearing_status",
+  "quality_deviations",
+  "assistive_devices_section",
+  "assisted_cane",
+  "assisted_quad_cane",
+  "assisted_crutches",
+  "assisted_hemiwalker",
+  "column_break_jvif",
+  "assisted_walker",
+  "assisted_wheeled_walker",
+  "assisted_others",
+  "section_break_abdw",
+  "pt_impression",
+  "plan_section",
+  "physical_therapy_program",
+  "column_break_cwzs",
+  "recommended_home_exercise_program",
+  "section_break_ablu",
+  "ptincharge",
+  "ptincharge_date",
+  "column_break_zfxt",
+  "pt_signature",
+  "signature_date",
+  "others_section",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rjkn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "physical_therapy_progress_note",
+   "fieldtype": "Heading",
+   "label": "Physical Therapy Progress Note"
+  },
+  {
+   "fieldname": "section_break_twcq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_yuwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mkkv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hthr",
+   "fieldtype": "Section Break",
+   "label": "PATIENT INFORMATION"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_eksi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "fieldname": "section_break_ibqh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "patient.last_name",
+   "fetch_if_empty": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vjoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient.first_name",
+   "fetch_if_empty": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ivej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient.middle_name",
+   "fetch_if_empty": 1,
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_eajn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": ".alcohol_past_use",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_ialg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient.dob",
+   "fetch_if_empty": 1,
+   "fieldname": "birthday",
+   "fieldtype": "Data",
+   "label": "Birthday",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bqpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subjective_section",
+   "fieldtype": "Section Break",
+   "label": "SUBJECTIVE"
+  },
+  {
+   "fieldname": "patients_chief_complains",
+   "fieldtype": "Data",
+   "label": "Patient's chief complains"
+  },
+  {
+   "columns": 6,
+   "fieldname": "patients_goal",
+   "fieldtype": "Data",
+   "label": "Patient's goal"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Physical Theraphy Progress Notes",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "others_section",
+   "fieldtype": "Section Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "behavioralmental_status_section",
+   "fieldtype": "Section Break",
+   "label": "OBJECTIVE - BEHAVIORAL/MENTAL STATUS"
+  },
+  {
+   "fieldname": "column_break_vwch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pain_section",
+   "fieldtype": "Section Break",
+   "label": "OBJECTIVE - PAIN"
+  },
+  {
+   "fieldname": "oi_and_palpation_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "oi",
+   "fieldtype": "Long Text",
+   "label": "OI",
+   "max_height": "6rem"
+  },
+  {
+   "fieldname": "column_break_pyhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "palpation",
+   "fieldtype": "Long Text",
+   "label": "Palpation",
+   "max_height": "6rem"
+  },
+  {
+   "fieldname": "vital_signs_section",
+   "fieldtype": "Section Break",
+   "label": "OBJECTIVE - VITAL SIGNS"
+  },
+  {
+   "fieldname": "vital_signs",
+   "fieldtype": "Table",
+   "label": "Vital Signs",
+   "options": "Physical Theraphy Progress Notes - Vital Signs"
+  },
+  {
+   "fieldname": "pain_details",
+   "fieldtype": "Table",
+   "label": "Pain Details",
+   "options": "Physical Theraphy Progress Notes - Pain"
+  },
+  {
+   "fieldname": "manual_muscle_strength_section",
+   "fieldtype": "Section Break",
+   "label": "Manual Muscle Strength"
+  },
+  {
+   "fieldname": "manual_muscle_strength",
+   "fieldtype": "Table",
+   "label": "Manual Muscle Strength",
+   "options": "Physical Theraphy Progress Notes - Manual Muscle Strength"
+  },
+  {
+   "fieldname": "functional_range_of_motion_section",
+   "fieldtype": "Section Break",
+   "label": "Functional Range of Motion"
+  },
+  {
+   "fieldname": "functional_range_of_motion",
+   "fieldtype": "Table",
+   "label": "Functional Range of Motion",
+   "options": "Physical Theraphy Progress Notes - Manual Muscle Strength"
+  },
+  {
+   "fieldname": "section_break_gnye",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "deep_tendon_reflex",
+   "fieldtype": "Long Text",
+   "label": "Deep Tendon Reflex",
+   "max_height": "6rem"
+  },
+  {
+   "fieldname": "column_break_gyaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asia_classification",
+   "fieldtype": "Long Text",
+   "label": "Asia Classification",
+   "max_height": "6rem"
+  },
+  {
+   "fieldname": "prior_level_of_function_adls_section",
+   "fieldtype": "Section Break",
+   "label": "PRIOR LEVEL OF FUNCTION"
+  },
+  {
+   "fieldname": "column_break_cluo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adls",
+   "fieldtype": "Select",
+   "label": "ADL's",
+   "options": "Independent\nNeeded Assistance\nUnable"
+  },
+  {
+   "fieldname": "adls_equipment_used",
+   "fieldtype": "Data",
+   "label": "Equipment Used"
+  },
+  {
+   "fieldname": "in_home_mobility_gait_or_wheelchairscooter",
+   "fieldtype": "Select",
+   "label": "In Home Mobility (Gait or Wheelchair/Scooter)",
+   "options": "Independent\nNeeded Assistance\nUnable"
+  },
+  {
+   "fieldname": "in_home_mobility_equipment_used",
+   "fieldtype": "Data",
+   "label": "Equipment Used"
+  },
+  {
+   "fieldname": "column_break_nlmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "community_mobility",
+   "fieldtype": "Select",
+   "label": "Community Mobility",
+   "options": "Independent\nNeeded Assistance\nUnable"
+  },
+  {
+   "fieldname": "community_mobility_equipment_used",
+   "fieldtype": "Data",
+   "label": "Equipment Used"
+  },
+  {
+   "fieldname": "section_break_undy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "functional_independence",
+   "fieldtype": "Table",
+   "label": "Functional Independence",
+   "options": "Physical Theraphy Progress Notes - Functional Independence"
+  },
+  {
+   "fieldname": "gait_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Gait Assessment"
+  },
+  {
+   "fieldname": "column_break_rxzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assistance",
+   "fieldtype": "Select",
+   "label": "Assistance",
+   "options": "Independent\nSBA\nMin Assist\nMod.\nMax Assist\nUnable"
+  },
+  {
+   "fieldname": "weight_bearing_status",
+   "fieldtype": "Select",
+   "label": "Weight Bearing Status",
+   "options": "FWB\nWBAT\nPWB\nTDWB\nNWB"
+  },
+  {
+   "fieldname": "quality_deviations",
+   "fieldtype": "Data",
+   "label": "Quality Deviations"
+  },
+  {
+   "fieldname": "assistive_devices_section",
+   "fieldtype": "Section Break",
+   "label": "Assistive Device(s)"
+  },
+  {
+   "fieldname": "column_break_jvif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_abdw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pt_impression",
+   "fieldtype": "Long Text",
+   "label": "PT Impression"
+  },
+  {
+   "fieldname": "plan_section",
+   "fieldtype": "Section Break",
+   "label": "Plan"
+  },
+  {
+   "fieldname": "physical_therapy_program",
+   "fieldtype": "Long Text",
+   "label": "Physical Therapy Program"
+  },
+  {
+   "fieldname": "column_break_cwzs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recommended_home_exercise_program",
+   "fieldtype": "Long Text",
+   "label": "Recommended Home Exercise Program"
+  },
+  {
+   "fieldname": "section_break_ablu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ptincharge",
+   "fieldtype": "Link",
+   "label": "PT-in-charge",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_zfxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pt_signature",
+   "fieldtype": "Attach Image",
+   "label": "PT Signature"
+  },
+  {
+   "default": "Today",
+   "fieldname": "signature_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "type_intensive",
+   "fieldtype": "Check",
+   "label": "Intensive"
+  },
+  {
+   "default": "0",
+   "fieldname": "type_recovery",
+   "fieldtype": "Check",
+   "label": "Recovery"
+  },
+  {
+   "default": "0",
+   "fieldname": "type_wellness",
+   "fieldtype": "Check",
+   "label": "Wellness"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_alert",
+   "fieldtype": "Check",
+   "label": "Alert"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_oriented",
+   "fieldtype": "Check",
+   "label": "Oriented"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_cooperative",
+   "fieldtype": "Check",
+   "label": "Cooperative"
+  },
+  {
+   "fieldname": "behavior_others",
+   "fieldtype": "Data",
+   "label": "Others"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_confused",
+   "fieldtype": "Check",
+   "label": "Confused"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_memory_deficit",
+   "fieldtype": "Check",
+   "label": "Memory Deficit"
+  },
+  {
+   "default": "0",
+   "fieldname": "behavior_impaired_judgement",
+   "fieldtype": "Check",
+   "label": "Impaired Judgement"
+  },
+  {
+   "fieldname": "gait_assess_surfaces",
+   "fieldtype": "Heading",
+   "label": "Surfaces"
+  },
+  {
+   "default": "0",
+   "fieldname": "gait_assess_level",
+   "fieldtype": "Check",
+   "label": "Level"
+  },
+  {
+   "default": "0",
+   "fieldname": "gait_assess_uneven",
+   "fieldtype": "Check",
+   "label": "Uneven"
+  },
+  {
+   "default": "0",
+   "fieldname": "gait_assess_stairs",
+   "fieldtype": "Check",
+   "label": "Stairs"
+  },
+  {
+   "fieldname": "gait_assess_distance",
+   "fieldtype": "Data",
+   "label": "Distance"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_cane",
+   "fieldtype": "Check",
+   "label": "Cane"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_quad_cane",
+   "fieldtype": "Check",
+   "label": "Quad Cane"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_crutches",
+   "fieldtype": "Check",
+   "label": "Crutches"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_hemiwalker",
+   "fieldtype": "Check",
+   "label": "Hemi-walker"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_walker",
+   "fieldtype": "Check",
+   "label": "Walker"
+  },
+  {
+   "default": "0",
+   "fieldname": "assisted_wheeled_walker",
+   "fieldtype": "Check",
+   "label": "Wheeled Walker"
+  },
+  {
+   "fieldname": "assisted_others",
+   "fieldtype": "Data",
+   "label": "Others"
+  },
+  {
+   "default": "Today",
+   "fieldname": "ptincharge_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-22 14:26:45.860019",
+ "modified_by": "Administrator",
+ "module": "XPS - Health - Physical Theraphy Progress Notes",
+ "name": "Physical Theraphy Progress Notes",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "H_PT",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

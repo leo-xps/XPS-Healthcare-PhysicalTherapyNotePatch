@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-22 13:31:48.765422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "intensity",
+  "location",
+  "aggravatingrelieving_factors"
+ ],
+ "fields": [
+  {
+   "fieldname": "intensity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Intensity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aggravatingrelieving_factors",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Aggravating/Relieving Factors"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-22 13:33:09.124176",
+ "modified_by": "Administrator",
+ "module": "XPS - Health - Physical Theraphy Progress Notes",
+ "name": "Physical Theraphy Progress Notes - Pain",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

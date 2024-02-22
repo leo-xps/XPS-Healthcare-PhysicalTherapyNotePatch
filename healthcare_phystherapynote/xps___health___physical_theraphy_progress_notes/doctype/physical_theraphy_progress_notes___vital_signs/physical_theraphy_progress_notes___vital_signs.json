@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "creation": "2024-02-22 12:51:12.902691",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vital_sign",
+  "before",
+  "after"
+ ],
+ "fields": [
+  {
+   "fieldname": "vital_sign",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vital Sign",
+   "options": "BP\nPR\nRR\nT\u00b0\nO2 Sat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "before",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Before"
+  },
+  {
+   "fieldname": "after",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "After"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-22 13:29:22.017699",
+ "modified_by": "Administrator",
+ "module": "XPS - Health - Physical Theraphy Progress Notes",
+ "name": "Physical Theraphy Progress Notes - Vital Signs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
