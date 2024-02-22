@@ -1,0 +1,58 @@
+[
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 08:56:14.821515",
+    "name": "Approve",
+    "workflow_action_name": "Approve"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 08:56:14.823346",
+    "name": "Reject",
+    "workflow_action_name": "Reject"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 08:56:14.825168",
+    "name": "Review",
+    "workflow_action_name": "Review"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 15:26:50.199490",
+    "name": "Approval LVL2 (2 Approver)",
+    "workflow_action_name": "Approval LVL2 (2 Approver)"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 15:27:04.255693",
+    "name": "Approval LVL3 (3 Approver)",
+    "workflow_action_name": "Approval LVL3 (3 Approver)"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 15:27:28.532432",
+    "name": "Approval LVL4 (4 Approver)",
+    "workflow_action_name": "Approval LVL4 (4 Approver)"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 14:39:06.861201",
+    "name": "Save",
+    "workflow_action_name": "Save"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow Action Master",
+    "modified": "2024-02-22 14:40:52.393455",
+    "name": "Approval LVL1 (1 Approver)",
+    "workflow_action_name": "Approval LVL1 (1 Approver)"
+  }
+]

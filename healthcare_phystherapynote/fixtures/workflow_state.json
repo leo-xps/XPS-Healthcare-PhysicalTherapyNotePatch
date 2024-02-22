@@ -1,0 +1,155 @@
+[
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "question-sign",
+    "modified": "2024-02-22 08:56:14.795262",
+    "name": "Pending",
+    "style": "",
+    "workflow_state_name": "Pending"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "ok-sign",
+    "modified": "2024-02-22 08:56:14.797137",
+    "name": "Approved",
+    "style": "Success",
+    "workflow_state_name": "Approved"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "remove",
+    "modified": "2024-02-22 08:56:14.798843",
+    "name": "Rejected",
+    "style": "Danger",
+    "workflow_state_name": "Rejected"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:06:38.452416",
+    "name": "Rejected by Finance",
+    "style": "",
+    "workflow_state_name": "Rejected by Finance"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:08:14.294408",
+    "name": "For L3 - Final Approval",
+    "style": "",
+    "workflow_state_name": "For L3 - Final Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:08:24.950592",
+    "name": "For L4 - Final Approval",
+    "style": "",
+    "workflow_state_name": "For L4 - Final Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:09:27.266072",
+    "name": "For L3 - Second Approval",
+    "style": "",
+    "workflow_state_name": "For L3 - Second Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:09:42.927812",
+    "name": "For L4 - Second Approval",
+    "style": "",
+    "workflow_state_name": "For L4 - Second Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:10:53.237685",
+    "name": "For L2 - Second Approval",
+    "style": "",
+    "workflow_state_name": "For L2 - Second Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:12:18.393574",
+    "name": "For L4 - 3rd Approval",
+    "style": "",
+    "workflow_state_name": "For L4 - 3rd Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:20:12.339812",
+    "name": "For L2 - Finance Manager Approval",
+    "style": "",
+    "workflow_state_name": "For L2 - Finance Manager Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:20:33.942739",
+    "name": "For L4 - Finance Manager Approval",
+    "style": "",
+    "workflow_state_name": "For L4 - Finance Manager Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:20:41.053568",
+    "name": "For L3 - Finance Manager Approval",
+    "style": "",
+    "workflow_state_name": "For L3 - Finance Manager Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 15:21:31.146421",
+    "name": "For L2 - Final Approval",
+    "style": "",
+    "workflow_state_name": "For L2 - Final Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 14:38:20.192100",
+    "name": "Draft",
+    "style": "",
+    "workflow_state_name": "Draft"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 14:40:17.740045",
+    "name": "For L1 - Final Approval",
+    "style": "",
+    "workflow_state_name": "For L1 - Final Approval"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Workflow State",
+    "icon": "",
+    "modified": "2024-02-22 14:39:13.044080",
+    "name": "Saved",
+    "style": "",
+    "workflow_state_name": "Saved"
+  }
+]
